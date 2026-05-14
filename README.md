@@ -6,4 +6,4 @@ Basic dashboard for Bogotá that displays a map image of the city.
 
 Open `index.html` in a browser.
 
-Open `top10-recyclers.html` to view the Top 10 recycler leaderboard with sample data.
+Open `index.html` and use the "View Top 10 Recyclers" link (or open `top10-recyclers.html` directly) to view the sample leaderboard.
