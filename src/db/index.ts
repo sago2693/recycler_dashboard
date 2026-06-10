@@ -5,7 +5,7 @@ import { seed } from "./seed";
 let db: Database | null = null;
 
 export async function initDb(): Promise<void> {
-  const SQL = await initSqlJs({ locateFile: () => "/sql-wasm.wasm" });
+  const SQL = await initSqlJs({ locateFile: (file) => `${import.meta.env.BASE_URL}${file}` });
   db = new SQL.Database();
   db.run(schema);
   seed(db);
