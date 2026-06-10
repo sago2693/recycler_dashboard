@@ -5,4 +5,7 @@ import react from '@vitejs/plugin-react'
 export default defineConfig({
   base: '/recycler_dashboard/',
   plugins: [react()],
+  optimizeDeps: {
+    exclude: ['sql.js'],
+  },
 })
